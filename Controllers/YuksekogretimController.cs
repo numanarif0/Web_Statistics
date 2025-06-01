@@ -5,11 +5,11 @@ using YokIstatistikWeb.Models;
 namespace YokIstatistikWeb.Controllers
 {
     [Route("Yuksekogretim")]
-    public class UniversiteController : Controller
+    public class YuksekogretimController : Controller
     {
         private readonly UniversiteService _universiteService;
 
-        public UniversiteController(UniversiteService universiteService)
+        public YuksekogretimController(UniversiteService universiteService)
         {
             _universiteService = universiteService;
         }

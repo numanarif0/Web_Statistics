@@ -139,9 +139,12 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
     {
     <tr>
         <td>
-            <a href="@Url.Action("Detay", "Universite", new { isim = uni.universite })">
-                @uni.universite
-            </a>
+                    
+                <td>
+                    <a href="/Yuksekogretim/Detay?isim=@Uri.EscapeDataString(uni.universite)">
+                        @uni.universite
+                    </a>
+                </td>
         </td>
         <td>@uni.tur</td>
         <td>@uni.sehir</td>
@@ -186,10 +189,14 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
         chart.draw(data, options);
     }
 
-    function drawPieChart(dataArray) {
+       function drawPieChart(dataArray) {
         const counts = {};
         dataArray.forEach(u => {
-            const tur = u.tur.toUpperCase();
+            if (!u.tur) return; // ❗ Boş türü geç
+
+            const tur = u.tur.toUpperCase().trim();
+            if (!tur) return; // ❗ Boş string ise yine geç
+
             counts[tur] = (counts[tur] || 0) + 1;
         });
 
@@ -208,6 +215,7 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
         const chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
         chart.draw(data, options);
     }
+
 
     // Filtreleme
     document.getElementById("turFilter").addEventListener("change", applyFilters);

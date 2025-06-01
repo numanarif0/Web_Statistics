@@ -643,24 +643,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/eyupgurer/.nuget/packages/": {}
+    "C:\\Users\\Numan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Numan\\Desktop\\yökdenemesite\\YokIstatistikWeb\\YokIstatistikWeb.csproj",
       "projectName": "YokIstatistikWeb",
-      "projectPath": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj",
-      "packagesPath": "/Users/eyupgurer/.nuget/packages/",
-      "outputPath": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/obj/",
+      "projectPath": "C:\\Users\\Numan\\Desktop\\yökdenemesite\\YokIstatistikWeb\\YokIstatistikWeb.csproj",
+      "packagesPath": "C:\\Users\\Numan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Numan\\Desktop\\yökdenemesite\\YokIstatistikWeb\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/eyupgurer/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Numan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -678,7 +685,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -712,7 +720,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
