@@ -8,7 +8,11 @@ html {
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -36,10 +40,10 @@ body {
 /* --------- ÖZEL DASHBOARD STİLLERİ ----------- */
 
 /* Roboto font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-attachment: fixed;
 }
@@ -52,6 +56,8 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem 0;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1030;
 }
 
 .navbar-brand {
@@ -80,13 +86,18 @@ body {
 }
 
 .navbar .nav-link:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 221, 87, 0.2), transparent);
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 221, 87, 0.2),
+            transparent
+    );
     transition: all 0.5s;
 }
 
@@ -162,7 +173,7 @@ body {
 }
 
 .stats-card:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -261,7 +272,7 @@ body {
 }
 
 .chart-container:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -366,7 +377,7 @@ footer {
 }
 
 footer:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -394,7 +405,7 @@ footer:before {
 }
 
 .footer-section h5:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -403,7 +414,8 @@ footer:before {
     background: linear-gradient(90deg, #3498db, #9b59b6);
 }
 
-.footer-section p, .footer-section li {
+.footer-section p,
+.footer-section li {
     color: #bdc3c7;
     line-height: 1.6;
     margin-bottom: 0.5rem;
@@ -483,4 +495,48 @@ footer:before {
     100% {
         background-position: 200% 0;
     }
+}
+
+/* Dropdown menü stilleri */
+.dropdown-menu {
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    padding: 0.7rem 1.5rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 221, 87, 0.1);
+    color: #003366;
+    transform: translateX(5px);
+}
+
+.dropdown-item:active {
+    background-color: #ffdd57;
+    color: #003366;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-menu {
+    border-top: 3px solid #ffdd57;
+    margin-top: 0.5rem;
+    position: absolute;
+    min-width: 200px;
+}
+
+.navbar .dropdown-item {
+    font-weight: 500;
 }

@@ -14,7 +14,7 @@ namespace YokIstatistikWeb.Controllers
             _universiteService = universiteService;
         }
         [Route("")]
-        public IActionResult Index(string search, string sehir, string tur)
+        public IActionResult Index(string search, string sehir, string tur, string yil)
         {
             var veriler = _universiteService.GetAll();
 
@@ -26,6 +26,16 @@ namespace YokIstatistikWeb.Controllers
 
             if (!string.IsNullOrEmpty(tur))
                 veriler = veriler.Where(u => u.tur == tur).ToList();
+
+            // Yıl parametresi varsa başlığı güncelle
+            if (!string.IsNullOrEmpty(yil))
+            {
+                ViewBag.Yil = yil;
+            }
+            else
+            {
+                ViewBag.Yil = "2023-2024"; // Varsayılan yıl
+            }
 
             // Şehir ve tür dropdown'ları için veriler ViewBag ile gönderilir
             ViewBag.Sehirler = _universiteService.GetAll().Select(u => u.sehir).Distinct().OrderBy(s => s).ToList();

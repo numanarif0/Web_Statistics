@@ -1,33 +1,33 @@
 ﻿@model List<YokIstatistikWeb.Models.Universite>
 
 @{
-    ViewData["Title"] = "Üniversite İstatistikleri";
+ViewData["Title"] = "Üniversite İstatistikleri";
 
-    var toplamUni = Model.Count;
-    var toplamOgretimElemani = Model.Sum(u => u.birimler.Sum(b => b.toplam_toplam ?? 0));
-    var devletSayisi = Model.Count(u => u.tur.ToUpper() == "DEVLET");
-    var vakifSayisi = Model.Count(u => u.tur.ToUpper() == "VAKIF");
-    var vakifMyoSayisi = Model.Count(u => u.tur.ToUpper() == "VAKIF MYO" );
-    var enBuyuk = Model
-        .OrderByDescending(u => u.birimler.Sum(b => b.toplam_toplam ?? 0))
-        .FirstOrDefault();
+var toplamUni = Model.Count;
+var toplamOgretimElemani = Model.Sum(u => u.birimler.Sum(b => b.toplam_toplam ?? 0));
+var devletSayisi = Model.Count(u => u.tur.ToUpper() == "DEVLET");
+var vakifSayisi = Model.Count(u => u.tur.ToUpper() == "VAKIF");
+var vakifMyoSayisi = Model.Count(u => u.tur.ToUpper() == "VAKIF MYO" );
+var enBuyuk = Model
+.OrderByDescending(u => u.birimler.Sum(b => b.toplam_toplam ?? 0))
+.FirstOrDefault();
 
-    var modelData = Model.Select(u => new
-    {
-        universite = u.universite,
-        tur = u.tur,
-        sehir = u.sehir,
-        toplam = u.birimler.Sum(b => b.toplam_toplam ?? 0)
-    }).ToList();
+var modelData = Model.Select(u => new
+{
+universite = u.universite,
+tur = u.tur,
+sehir = u.sehir,
+toplam = u.birimler.Sum(b => b.toplam_toplam ?? 0)
+}).ToList();
 
-    var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
+var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
 }
 
 <!-- Google Charts -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <!-- BAŞLIK -->
-<h2 class="mb-4">2023-2024 Yükseköğretim Akademik Personel Verileri</h2>
+<h2 class="mb-4">@ViewBag.Yil Yükseköğretim Akademik Personel Verileri</h2>
 
 <!-- BİLGİ KARTLARI -->
 <div class="row text-center mb-4">
@@ -65,7 +65,7 @@
             <option value="">Seçiniz</option>
             @foreach (var uni in Model.Select(u => u.universite).OrderBy(x => x))
             {
-                <option value="@uni">@uni</option>
+            <option value="@uni">@uni</option>
             }
         </select>
     </div>
@@ -75,7 +75,7 @@
             <option value="">Seçiniz</option>
             @foreach (var uni in Model.Select(u => u.universite).OrderBy(x => x))
             {
-                <option value="@uni">@uni</option>
+            <option value="@uni">@uni</option>
             }
         </select>
     </div>
@@ -105,7 +105,7 @@
             <option value="">Tümü</option>
             @foreach (var sehir in Model.Select(u => u.sehir).Distinct().OrderBy(x => x))
             {
-                <option value="@sehir">@sehir</option>
+            <option value="@sehir">@sehir</option>
             }
         </select>
     </div>
@@ -127,27 +127,27 @@
 <!-- TABLO -->
 <table class="table table-bordered table-striped mt-4" id="uniTable">
     <thead class="table-light">
-        <tr>
-            <th>Üniversite</th>
-            <th>Tür</th>
-            <th>Şehir</th>
-            <th>Toplam Öğretim Elemanı</th>
-        </tr>
+    <tr>
+        <th>Üniversite</th>
+        <th>Tür</th>
+        <th>Şehir</th>
+        <th>Toplam Öğretim Elemanı</th>
+    </tr>
     </thead>
     <tbody>
-        @foreach (var uni in Model)
-        {
-            <tr>
-                <td>
-                    <a href="@Url.Action("Detay", "Universite", new { isim = uni.universite })">
-                        @uni.universite
-                    </a>
-                </td>
-                <td>@uni.tur</td>
-                <td>@uni.sehir</td>
-                <td>@uni.birimler.Sum(b => b.toplam_toplam ?? 0)</td>
-            </tr>
-        }
+    @foreach (var uni in Model)
+    {
+    <tr>
+        <td>
+            <a href="@Url.Action("Detay", "Universite", new { isim = uni.universite })">
+                @uni.universite
+            </a>
+        </td>
+        <td>@uni.tur</td>
+        <td>@uni.sehir</td>
+        <td>@uni.birimler.Sum(b => b.toplam_toplam ?? 0)</td>
+    </tr>
+    }
     </tbody>
 </table>
 
@@ -261,7 +261,7 @@
         drawChart(allData);
         drawPieChart(allData);
     }
-        function goToCompare() {
+    function goToCompare() {
         const u1 = document.getElementById("uni1").value;
         const u2 = document.getElementById("uni2").value;
 
