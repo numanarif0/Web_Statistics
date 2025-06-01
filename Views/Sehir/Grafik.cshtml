@@ -1,0 +1,130 @@
+﻿@model List<YokIstatistikWeb.Models.SehirVeriViewModel>
+
+@functions {
+    private static string ConvertToGeoChartProvince(string sehir)
+    {
+        // Türkçe karakter düzeltme
+        string normalized = sehir.ToUpper()
+            .Replace("İ", "I")
+            .Replace("I", "I")
+            .Replace("Ğ", "G")
+            .Replace("Ü", "U")
+            .Replace("Ş", "S")
+            .Replace("Ö", "O")
+            .Replace("Ç", "C");
+
+        return normalized switch
+        {
+            "ADANA" => "Adana",
+            "ADIYAMAN" => "Adiyaman",
+            "AFYONKARAHISAR" => "Afyonkarahisar",
+            "AGRI" => "Agri",
+            "AMASYA" => "Amasya",
+            "ANKARA" => "Ankara",
+            "ANTALYA" => "Antalya",
+            "ARTVIN" => "Artvin",
+            "AYDIN" => "Aydin",
+            "BALIKESIR" => "Balikesir",
+            "BILECIK" => "Bilecik",
+            "BINGOL" => "Bingol",
+            "BITLIS" => "Bitlis",
+            "BOLU" => "Bolu",
+            "BURDUR" => "Burdur",
+            "BURSA" => "Bursa",
+            "CANAKKALE" => "Canakkale",
+            "CANKIRI" => "Cankiri",
+            "CORUM" => "Corum",
+            "DENIZLI" => "Denizli",
+            "DIYARBAKIR" => "Diyarbakir",
+            "EDIRNE" => "Edirne",
+            "ELAZIG" => "Elazig",
+            "ERZINCAN" => "Erzincan",
+            "ERZURUM" => "Erzurum",
+            "ESKISEHIR" => "Eskisehir",
+            "GAZIANTEP" => "Gaziantep",
+            "GIRESUN" => "Giresun",
+            "GUMUSHANE" => "Gumushane",
+            "HAKKARI" => "Hakkari",
+            "HATAY" => "Hatay",
+            "ISPARTA" => "Isparta",
+            "ISTANBUL" => "Istanbul",
+            "IZMIR" => "Izmir",
+            "KARS" => "Kars",
+            "KASTAMONU" => "Kastamonu",
+            "KAYSERI" => "Kayseri",
+            "KIRIKKALE" => "Kirikkale",
+            "KIRKLARELI" => "Kirklareli",
+            "KIRSEHIR" => "Kirsehir",
+            "KOCAELI" => "Kocaeli",
+            "KONYA" => "Konya",
+            "KUTAHYA" => "Kutahya",
+            "MALATYA" => "Malatya",
+            "MANISA" => "Manisa",
+            "MARDIN" => "Mardin",
+            "MERSIN" => "Mersin",
+            "MUGLA" => "Mugla",
+            "MUS" => "Mus",
+            "NEVSEHIR" => "Nevsehir",
+            "NIGDE" => "Nigde",
+            "ORDU" => "Ordu",
+            "RIZE" => "Rize",
+            "SAKARYA" => "Sakarya",
+            "SAMSUN" => "Samsun",
+            "SIIRT" => "Siirt",
+            "SINOP" => "Sinop",
+            "SIRNAK" => "Sirnak",
+            "SIVAS" => "Sivas",
+            "SANLIURFA" => "Sanliurfa",
+            "TEKIRDAG" => "Tekirdag",
+            "TOKAT" => "Tokat",
+            "TRABZON" => "Trabzon",
+            "TUNCELI" => "Tunceli",
+            "USAK" => "Usak",
+            "VAN" => "Van",
+            "YOZGAT" => "Yozgat",
+            "ZONGULDAK" => "Zonguldak",
+            _ => sehir // fallback
+        };
+    }
+}
+
+
+<!-- Google Charts -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<h2 class="mb-4 text-center">Türkiye Haritası Üzerinde Öğretim Elemanı Dağılımı</h2>
+<div id="geochart" style="width: 100%; height: 700px;"></div>
+
+
+
+<script type="text/javascript">
+    google.charts.load('current', {
+        packages: ['geochart']
+        // mapsApiKey eklemene gerek yok, Türkiye için çalışır
+    });
+
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+        ['Province', 'Toplam Öğretim Elemanı', {type: 'string', role: 'tooltip'}],
+        @foreach (var v in Model)
+        {
+                @Html.Raw("['" + v.ISOCode + "', " + v.Toplam + ", '" + v.Sehir + ": " + v.Toplam + " kişi'],")
+        }
+    ]);
+
+
+        var options = {
+            region: 'TR',
+            resolution: 'provinces',
+            colorAxis: { colors: ['#e0f2f1', '#00695c'] },
+            backgroundColor: '#f8f9fa',
+            datalessRegionColor: '#eeeeee',
+            defaultColor: '#cccccc'
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('geochart'));
+        chart.draw(data, options);
+    }
+</script>

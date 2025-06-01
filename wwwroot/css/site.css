@@ -1,0 +1,90 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* --------- ÖZEL DASHBOARD STÝLLERÝ ----------- */
+
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003366;
+}
+
+    .navbar .nav-link, .navbar .navbar-brand {
+        color: #ffffff !important;
+    }
+
+        .navbar .nav-link:hover {
+            text-decoration: underline;
+        }
+
+/* Bilgi kartlarý */
+.stats-card {
+    border-left: 5px solid #0d6efd;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+    .stats-card:hover {
+        transform: scale(1.02);
+    }
+
+.stats-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.stats-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Grafik kutusu */
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Filtreler */
+.filter-form input, .filter-form select {
+    border-radius: 8px;
+}
