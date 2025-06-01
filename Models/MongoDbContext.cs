@@ -15,6 +15,6 @@ namespace YokIstatistikWeb.Models // namespace'i projene göre ayarla
         }
 
         public IMongoCollection<Universite> Universiteler =>
-            _database.GetCollection<Universite>("universiteler"); // koleksiyon adın buysa
+            _database.GetCollection<Universite>("YOI_ogretim_elemani_akademik_gorev_sayilari_2023_2024"); // koleksiyon adın buysa
     }
 }

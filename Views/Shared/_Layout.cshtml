@@ -7,55 +7,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/YokIstatistikWeb.styles.css" asp-append-version="true" />
+    <!-- Font Awesome için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">🎓 YÖK İstatistikleri</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Veri Karşılaştırmaları</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">İller & Harita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Sehir" asp-action="Grafik">Şehir Bazlı Grafik</a>
-                    </li>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <i class="fas fa-graduation-cap me-2"></i>YÖK İstatistikleri
+        </a>
 
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Yıllara Göre</a>
-                    </li>
-                </ul>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <i class="fas fa-home me-1"></i>Ana Sayfa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Universite" asp-action="Index">
+                        <i class="fas fa-university me-1"></i>Yükseköğretim İstatistikleri
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Sehir" asp-action="Grafik">
+                        <i class="fas fa-chart-area me-1"></i>Şehir Bazlı Grafik
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chalkboard-teacher me-1"></i>Öğretim Elemanı İstatistikleri
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
-    <!-- ANA İÇERİK -->
-    <div class="container mt-4">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
     </div>
+</nav>
 
-    <!-- FOOTER -->
-    <footer class="bg-light text-center text-muted mt-5 py-3 border-top">
-        <div>
-            © @DateTime.Now.Year YÖK Veri Sunumu Projesi • <small>Hazırlayan: Numan</small>
-        </div>
-    </footer>
+<!-- ANA İÇERİK -->
+<main class="main-content">
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+</main>
 
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+<!-- FOOTER - Sadece alt bilgi -->
+<footer class="bg-dark text-center text-light mt-5 py-3 border-top">
+    <div class="container">
+        <p class="mb-0">&copy; @DateTime.Now.Year YÖK İstatistikleri • Geliştirici: Numan |
+            <a href="#" class="text-info">Kullanım Koşulları</a> |
+            <a href="#" class="text-info">Gizlilik Politikası</a> |
+            <a href="#" class="text-info">Veri Kaynakları</a>
+        </p>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

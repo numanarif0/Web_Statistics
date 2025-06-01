@@ -4,6 +4,7 @@ using YokIstatistikWeb.Models;
 
 namespace YokIstatistikWeb.Controllers
 {
+    [Route("Yuksekogretim")]
     public class UniversiteController : Controller
     {
         private readonly UniversiteService _universiteService;
@@ -12,7 +13,7 @@ namespace YokIstatistikWeb.Controllers
         {
             _universiteService = universiteService;
         }
-
+        [Route("")]
         public IActionResult Index(string search, string sehir, string tur)
         {
             var veriler = _universiteService.GetAll();
@@ -33,7 +34,7 @@ namespace YokIstatistikWeb.Controllers
             return View(veriler);
         }
 
-
+        [Route("Detay")]
         // ✅ Detay Sayfası Aksiyonu
         public IActionResult Detay(string isim)
         {
@@ -47,7 +48,7 @@ namespace YokIstatistikWeb.Controllers
 
             return View(universite);
         }
-
+        [Route("Karsilastir")]
         public IActionResult Karsilastir(string uni1, string uni2)
         {
             var tumVeriler = _universiteService.GetAll();
