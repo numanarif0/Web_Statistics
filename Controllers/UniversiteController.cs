@@ -66,6 +66,7 @@ namespace YokIstatistikWeb.Controllers
             var u1 = tumVeriler.FirstOrDefault(u => u.universite == uni1);
             var u2 = tumVeriler.FirstOrDefault(u => u.universite == uni2);
 
+            
             if (u1 == null || u2 == null)
                 return NotFound("Üniversite bulunamadı");
 

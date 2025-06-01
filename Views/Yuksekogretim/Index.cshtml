@@ -45,7 +45,7 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
     </div>
     <div class="col-md-3 mb-3">
         <div class="stats-card p-3 rounded">
-            <div class="stats-title">Devlet / Vakıf</div>
+            <div class="stats-title">Devlet / Vakıf / Vakıf Myo</div>
             <div class="stats-value text-dark">@devletSayisi Devlet / @vakifSayisi Vakıf / @vakifMyoSayisi Vakıf Myo</div>
         </div>
     </div>
@@ -270,7 +270,7 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
             return;
         }
 
-        const url = `/Universite/Karsilastir?uni1=${encodeURIComponent(u1)}&uni2=${encodeURIComponent(u2)}`;
+        const url = `/Yuksekogretim/Karsilastir?uni1=${encodeURIComponent(u1)}&uni2=${encodeURIComponent(u2)}`;
         window.location.href = url;
     }
 
