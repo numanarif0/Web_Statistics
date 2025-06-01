@@ -7,7 +7,7 @@
     var toplamOgretimElemani = Model.Sum(u => u.birimler.Sum(b => b.toplam_toplam ?? 0));
     var devletSayisi = Model.Count(u => u.tur.ToUpper() == "DEVLET");
     var vakifSayisi = Model.Count(u => u.tur.ToUpper() == "VAKIF");
-
+    var vakifMyoSayisi = Model.Count(u => u.tur.ToUpper() == "VAKIF MYO" );
     var enBuyuk = Model
         .OrderByDescending(u => u.birimler.Sum(b => b.toplam_toplam ?? 0))
         .FirstOrDefault();
@@ -46,7 +46,7 @@
     <div class="col-md-3 mb-3">
         <div class="stats-card p-3 rounded">
             <div class="stats-title">Devlet / Vakıf</div>
-            <div class="stats-value text-dark">@devletSayisi devlet / @vakifSayisi vakıf</div>
+            <div class="stats-value text-dark">@devletSayisi Devlet / @vakifSayisi Vakıf / @vakifMyoSayisi Vakıf Myo</div>
         </div>
     </div>
     <div class="col-md-3 mb-3">
@@ -96,6 +96,7 @@
             <option value="">Tümü</option>
             <option value="DEVLET">Devlet</option>
             <option value="VAKIF">Vakıf</option>
+            <option value="VAKIF MYO">Vakıf MYO</option>
         </select>
     </div>
     <div class="col-md-4">

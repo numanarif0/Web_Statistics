@@ -1,8 +1,138 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Ana Sayfa";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <!-- Sayfa Header -->
+    <div class="page-header">
+        <h2 class="display-4">YÖK İstatistikleri</h2>
+        <p class="lead">Yükseköğretim Kurumları Genel Dağılımı</p>
+    </div>
+
+    <!-- İstatistik Kartları -->
+    <div class="row mb-5">
+        <div class="col-md-3 mb-3">
+            <div class="card stats-card border-primary">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">@ViewBag.Toplam</h3>
+                    <p class="card-text">Toplam Kurum</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card stats-card border-success">
+                <div class="card-body">
+                    <h3 class="card-title text-success">@ViewBag.Devlet</h3>
+                    <p class="card-text">Devlet Üniversitesi</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card stats-card border-warning">
+                <div class="card-body">
+                    <h3 class="card-title text-warning">@ViewBag.Vakif</h3>
+                    <p class="card-text">Vakıf Üniversitesi</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card stats-card border-info">
+                <div class="card-body">
+                    <h3 class="card-title text-info">@ViewBag.VakifMyo</h3>
+                    <p class="card-text">Vakıf MYO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Charts Grafiği -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-container">
+                <div class="card-header">
+                    <h4 class="mb-0">Yükseköğretim Kurumları Dağılımı</h4>
+                </div>
+                <div class="card-body">
+                    <div id="universityChart" style="width: 100%; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+    google.charts.load('current', { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawUniversityChart);
+
+    function drawUniversityChart() {
+        // Chart data - grafikte 3 ayrı kategori
+        var data = google.visualization.arrayToDataTable([
+            ['Kurum Türü', 'Sayı'],
+            ['Devlet Üniversiteleri', @ViewBag.Devlet],
+            ['Vakıf Üniversiteleri', @ViewBag.Vakif],
+            ['Vakıf MYO', @ViewBag.VakifMyo]
+        ]);
+
+        // Chart options
+        var options = {
+            title: 'Türkiye\'de Yükseköğretim Kurumları Dağılımı',
+            titleTextStyle: {
+                fontSize: 20,
+                bold: true,
+                color: '#333'
+            },
+            pieHole: 0.4,
+            colors: ['#0000A0', '#FF0000', '#FFA500'],
+            legend: {
+                position: 'bottom',
+                textStyle: {
+                    fontSize: 14,
+                    color: '#555'
+                }
+            },
+            tooltip: {
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            chartArea: {
+                left: 50,
+                top: 80,
+                width: '90%',
+                height: '70%'
+            },
+            backgroundColor: 'transparent',
+            pieSliceTextStyle: {
+                fontSize: 14,
+                bold: true
+            }
+        };
+
+        // Draw the chart
+        var chart = new google.visualization.PieChart(document.getElementById('universityChart'));
+        chart.draw(data, options);
+    }
+
+    // Grafik responsive olması için
+    window.addEventListener('resize', function() {
+        drawUniversityChart();
+    });
+
+    // Sayfa yüklendiğinde animasyonları tetikle
+    document.addEventListener('DOMContentLoaded', function() {
+        // Kartlara hover efekti ekle
+        const cards = document.querySelectorAll('.stats-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-15px) scale(1.03)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    });
+</script>
+}
