@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\yuksekogretim\\detay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\yuksekogretim\\detay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\yuksekogretim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\yuksekogretim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\controllers\\universitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:controllers\\universitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\sehir\\grafik.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\sehir\\grafik.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\yuksekogretim\\karsilastir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\yuksekogretim\\karsilastir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\controllers\\sehircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:controllers\\sehircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\sehirveriviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:models\\sehirveriviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\services\\universiteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:services\\universiteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,40 +63,32 @@
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:models\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\controllers\\universitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:controllers\\universitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\universite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:models\\universite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\sehirveriviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:models\\sehirveriviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\services\\universiteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:services\\universiteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\universite\\karsilastir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\universite\\karsilastir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\universite\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\universite\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\universite\\detay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\universite\\detay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\birim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:models\\birim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,33 +106,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T22:14:51.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-01T22:11:09.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T21:54:51.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T21:50:14.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T20:50:14.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:46:13.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "SehirVeriViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\SehirVeriViewModel.cs",
               "RelativeDocumentMoniker": "Models\\SehirVeriViewModel.cs",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\SehirVeriViewModel.cs",
               "RelativeToolTip": "Models\\SehirVeriViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T14:45:44.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Grafik.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Sehir\\Grafik.cshtml",
               "RelativeDocumentMoniker": "Views\\Sehir\\Grafik.cshtml",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Sehir\\Grafik.cshtml",
               "RelativeToolTip": "Views\\Sehir\\Grafik.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T14:24:58.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "MongoDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\MongoDbContext.cs",
               "RelativeDocumentMoniker": "Models\\MongoDbContext.cs",
@@ -121,104 +222,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "SehirController.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\SehirController.cs",
               "RelativeDocumentMoniker": "Controllers\\SehirController.cs",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\SehirController.cs",
               "RelativeToolTip": "Controllers\\SehirController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T14:11:24.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "Karsilastir.cshtml",
-              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Universite\\Karsilastir.cshtml",
-              "RelativeDocumentMoniker": "Views\\Universite\\Karsilastir.cshtml",
-              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Universite\\Karsilastir.cshtml",
-              "RelativeToolTip": "Views\\Universite\\Karsilastir.cshtml",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAwwKgAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Karsilastir.cshtml",
+              "RelativeDocumentMoniker": "Views\\Yuksekogretim\\Karsilastir.cshtml",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Karsilastir.cshtml",
+              "RelativeToolTip": "Views\\Yuksekogretim\\Karsilastir.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T13:26:02.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-31T13:16:11.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T13:16:11.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Detay.cshtml",
-              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Universite\\Detay.cshtml",
-              "RelativeDocumentMoniker": "Views\\Universite\\Detay.cshtml",
-              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Universite\\Detay.cshtml",
-              "RelativeToolTip": "Views\\Universite\\Detay.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAswGoAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Detay.cshtml",
+              "RelativeDocumentMoniker": "Views\\Yuksekogretim\\Detay.cshtml",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Detay.cshtml",
+              "RelativeToolTip": "Views\\Yuksekogretim\\Detay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T12:48:23.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswDAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAADAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T11:54:57.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Universite\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Universite\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Universite\\Index.cshtml",
-              "RelativeToolTip": "Views\\Universite\\Index.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAwwJoAAAAoAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Yuksekogretim\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Index.cshtml",
+              "RelativeToolTip": "Views\\Yuksekogretim\\Index.cshtml",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAAABEBAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T11:54:22.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "UniversiteController.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\UniversiteController.cs",
               "RelativeDocumentMoniker": "Controllers\\UniversiteController.cs",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\UniversiteController.cs",
               "RelativeToolTip": "Controllers\\UniversiteController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T11:50:04.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAnwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T11:46:44.235Z",
               "EditorCaption": ""
@@ -231,27 +331,27 @@
               "RelativeDocumentMoniker": "Services\\UniversiteService.cs",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Services\\UniversiteService.cs",
               "RelativeToolTip": "Services\\UniversiteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T11:46:16.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-31T11:41:45.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "MongoDBSettings.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\MongoDBSettings.cs",
               "RelativeDocumentMoniker": "Models\\MongoDBSettings.cs",
@@ -264,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Universite.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\Universite.cs",
               "RelativeDocumentMoniker": "Models\\Universite.cs",
@@ -277,16 +377,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Birim.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\Birim.cs",
               "RelativeDocumentMoniker": "Models\\Birim.cs",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\Birim.cs",
               "RelativeToolTip": "Models\\Birim.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA5wBEAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA1wBEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T11:40:08.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T11:40:08.162Z"
             }
           ]
         }
