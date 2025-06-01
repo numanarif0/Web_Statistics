@@ -21,13 +21,26 @@ toplam = u.birimler.Sum(b => b.toplam_toplam ?? 0)
 }).ToList();
 
 var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
+
+// Yıl seçenekleri için liste
+var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
 }
 
 <!-- Google Charts -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <!-- BAŞLIK -->
-<h2 class="mb-4">@ViewBag.Yil Yükseköğretim Akademik Personel Verileri</h2>
+<div class="mb-4">
+    <h2>@ViewBag.Yil Yükseköğretim Akademik Personel Verileri</h2>
+</div>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
 
 <!-- BİLGİ KARTLARI -->
 <div class="row text-center mb-4">
@@ -139,7 +152,7 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
     {
     <tr>
         <td>
-            <a href="@Url.Action("Detay", "Universite", new { isim = uni.universite })">
+            <a href="@Url.Action("Detay", "Yuksekogretim", new { id = uni.Id, year = ViewBag.Yil.Replace("-", "_") })">
                 @uni.universite
             </a>
         </td>
@@ -264,14 +277,19 @@ var jsonData = System.Text.Json.JsonSerializer.Serialize(modelData);
     function goToCompare() {
         const u1 = document.getElementById("uni1").value;
         const u2 = document.getElementById("uni2").value;
+        const year = document.getElementById("yearSelect").value;
 
         if (!u1 || !u2 || u1 === u2) {
             alert("Lütfen farklı iki üniversite seçin.");
             return;
         }
 
-        const url = `/Yuksekogretim/Karsilastir?uni1=${encodeURIComponent(u1)}&uni2=${encodeURIComponent(u2)}`;
+        const url = `/Yuksekogretim/Karsilastir?id1=${encodeURIComponent(u1)}&id2=${encodeURIComponent(u2)}&year=${year}`;
         window.location.href = url;
+    }
+
+    function changeYear(year) {
+        window.location.href = '/Yuksekogretim?year=' + year;
     }
 
 </script>

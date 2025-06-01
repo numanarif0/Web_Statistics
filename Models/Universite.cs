@@ -14,5 +14,7 @@ namespace YokIstatistikWeb.Models
         public string sehir { get; set; }
 
         public List<Birim> birimler { get; set; }
+
+        public string yil { get; set; }
     }
 }
