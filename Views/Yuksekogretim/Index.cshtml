@@ -36,10 +36,10 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
 
 @if (TempData["Error"] != null)
 {
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        @TempData["Error"]
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    @TempData["Error"]
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 }
 
 <!-- BİLGİ KARTLARI -->
@@ -76,9 +76,9 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
         <label class="form-label">1. Üniversite:</label>
         <select id="uni1" class="form-select">
             <option value="">Seçiniz</option>
-            @foreach (var uni in Model.Select(u => u.universite).OrderBy(x => x))
+            @foreach (var uni in Model.OrderBy(x => x.universite))
             {
-            <option value="@uni">@uni</option>
+            <option value="@uni.Id">@uni.universite</option>
             }
         </select>
     </div>
@@ -86,9 +86,9 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
         <label class="form-label">2. Üniversite:</label>
         <select id="uni2" class="form-select">
             <option value="">Seçiniz</option>
-            @foreach (var uni in Model.Select(u => u.universite).OrderBy(x => x))
+            @foreach (var uni in Model.OrderBy(x => x.universite))
             {
-            <option value="@uni">@uni</option>
+            <option value="@uni.Id">@uni.universite</option>
             }
         </select>
     </div>
@@ -275,16 +275,16 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
         drawPieChart(allData);
     }
     function goToCompare() {
-        const u1 = document.getElementById("uni1").value;
-        const u2 = document.getElementById("uni2").value;
-        const year = document.getElementById("yearSelect").value;
+        const id1 = document.getElementById("uni1").value;
+        const id2 = document.getElementById("uni2").value;
+        const year = '@ViewBag.Yil'.replace('-', '_');
 
-        if (!u1 || !u2 || u1 === u2) {
+        if (!id1 || !id2 || id1 === id2) {
             alert("Lütfen farklı iki üniversite seçin.");
             return;
         }
 
-        const url = `/Yuksekogretim/Karsilastir?id1=${encodeURIComponent(u1)}&id2=${encodeURIComponent(u2)}&year=${year}`;
+        const url = `/Yuksekogretim/Karsilastir?id1=${encodeURIComponent(id1)}&id2=${encodeURIComponent(id2)}&year=${year}`;
         window.location.href = url;
     }
 
