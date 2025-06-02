@@ -1,4 +1,4 @@
 # build klasörleri
 bin/
 obj/
-
+.DS_Store
