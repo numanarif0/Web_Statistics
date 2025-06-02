@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\yuksekogretim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\yuksekogretim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\yuksekogretim\\detay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\yuksekogretim\\detay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\models\\universite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC7897EF-D2E2-4A68-A5AE-ADFFB2BB4A78}|YokIstatistikWeb.csproj|c:\\users\\numan\\desktop\\y\u00F6kdenemesite\\yokistatistikweb\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -106,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -138,16 +138,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T22:14:51.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T22:14:51.435Z"
             },
             {
               "$type": "Document",
@@ -187,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -259,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Karsilastir.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Karsilastir.cshtml",
               "RelativeDocumentMoniker": "Views\\Yuksekogretim\\Karsilastir.cshtml",
@@ -289,37 +288,38 @@
               "RelativeDocumentMoniker": "Views\\Yuksekogretim\\Detay.cshtml",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Detay.cshtml",
               "RelativeToolTip": "Views\\Yuksekogretim\\Detay.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAADgv2AAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T12:48:23.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T11:54:57.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Yuksekogretim\\Index.cshtml",
               "ToolTip": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Views\\Yuksekogretim\\Index.cshtml",
               "RelativeToolTip": "Views\\Yuksekogretim\\Index.cshtml",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAIwMwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwCAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-31T11:54:22.057Z"
+              "WhenOpened": "2025-05-31T11:54:22.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "YuksekogretimController.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Controllers\\YuksekogretimController.cs",
               "RelativeDocumentMoniker": "Controllers\\YuksekogretimController.cs",
@@ -331,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -343,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UniversiteService.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Services\\UniversiteService.cs",
               "RelativeDocumentMoniker": "Services\\UniversiteService.cs",
@@ -355,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -379,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Universite.cs",
               "DocumentMoniker": "C:\\Users\\Numan\\Desktop\\y\u00F6kdenemesite\\YokIstatistikWeb\\Models\\Universite.cs",
               "RelativeDocumentMoniker": "Models\\Universite.cs",

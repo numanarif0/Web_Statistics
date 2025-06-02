@@ -199,26 +199,37 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
         chart.draw(data, options);
     }
 
-    function drawPieChart(dataArray) {
+        function drawPieChart(dataArray) {
         const counts = {};
         dataArray.forEach(u => {
-            const tur = u.tur.toUpperCase();
-            counts[tur] = (counts[tur] || 0) + 1;
+            // Tür değerlerini standartlaştır
+            const tur = u.tur.trim().toUpperCase();
+            // Sadece bilinen türleri ekle
+            if (["DEVLET", "VAKIF", "VAKIF MYO"].includes(tur)) {
+                counts[tur] = (counts[tur] || 0) + 1;
+            }
         });
 
         const chartData = [
             ["Tür", "Üniversite Sayısı"],
-            ...Object.entries(counts)
+            ...Object.entries(counts).map(([key, value]) => {
+                // Görüntüleme için düzgün formatlama
+                const displayName = key === "VAKIF MYO" ? "Vakıf MYO" :
+                                  key === "VAKIF" ? "Vakıf" : "Devlet";
+                return [displayName, value];
+            })
         ];
 
         const data = google.visualization.arrayToDataTable(chartData);
 
         const options = {
             title: 'Üniversite Türlerine Göre Dağılım',
-            is3D: true
+            is3D: true,
+            colors: ['#0000A0', '#FF0000', '#FFA500'], // Devlet, Vakıf, Vakıf MYO için sabit renkler
+            legend: { position: 'right' }
         };
 
-        const chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+        const chart = new google.visualization.PieChart(document.getElementById("piechart_div"));
         chart.draw(data, options);
     }
 
