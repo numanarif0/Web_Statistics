@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YokIstatistikWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7951c8a2c0a6184f42f685ad9a3d003b4a41aad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3b12e65ec73c08232edcc079e5022a5a2578ee9")]
 [assembly: System.Reflection.AssemblyProductAttribute("YokIstatistikWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YokIstatistikWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
