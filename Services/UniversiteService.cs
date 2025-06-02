@@ -19,5 +19,6 @@ namespace YokIstatistikWeb.Services
         {
             return _collection.Find(_ => true).ToList();
         }
+
     }
 }
