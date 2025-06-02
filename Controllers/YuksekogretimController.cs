@@ -15,7 +15,7 @@ namespace YokIstatistikWeb.Controllers
         }
 
         [Route("")]
-        public IActionResult Index(string search, string sehir, string tur, string year = "2024_2025")
+        public IActionResult Index(string search, string sehir, string tur, string year = "2023_2024")
         {
             try
             {
@@ -45,7 +45,7 @@ namespace YokIstatistikWeb.Controllers
         }
 
         [Route("Detay")]
-        public IActionResult Detay(string id, string year = "2024_2025")
+        public IActionResult Detay(string id, string year = "2023_2024")
         {
             try
             {
@@ -68,7 +68,7 @@ namespace YokIstatistikWeb.Controllers
         }
 
         [Route("Karsilastir")]
-        public IActionResult Karsilastir(string id1, string id2, string year = "2024_2025")
+        public IActionResult Karsilastir(string id1, string id2, string year = "2023_2024")
         {
             try
             {
@@ -88,6 +88,44 @@ namespace YokIstatistikWeb.Controllers
             {
                 TempData["Error"] = "Karşılaştırma yapılırken bir hata oluştu.";
                 return RedirectToAction("Index", new { year });
+            }
+        }
+
+        [HttpGet]
+        [Route("YilMenu")]
+        public IActionResult YilMenu(string year = "2023_2024")
+        {
+            try
+            {
+                ViewBag.Yil = year.Replace("_", "-");
+                return View();
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Veriler yüklenirken bir hata oluştu.";
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        [Route("AkademikPersonel")]
+        public IActionResult AkademikPersonel(string year = "2023_2024")
+        {
+            try
+            {
+                var collection = _context.GetCollectionForYear(year);
+                var veriler = collection.Find(_ => true).ToList();
+
+                ViewBag.Yil = year.Replace("_", "-");
+                ViewBag.Sehirler = veriler.Select(u => u.sehir).Distinct().OrderBy(s => s).ToList();
+                ViewBag.Turler = veriler.Select(u => u.tur).Distinct().OrderBy(t => t).ToList();
+                ViewBag.AkademikPersonel = true;
+
+                return View("Index", veriler);
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Veriler yüklenirken bir hata oluştu.";
+                return RedirectToAction("YilMenu", new { year });
             }
         }
     }

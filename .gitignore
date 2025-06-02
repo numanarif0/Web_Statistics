@@ -1,69 +1,102 @@
-# macOS
-.DS_Store
-<<<<<<< HEAD
-.vs/
-=======
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Visual Studio / Rider
-.vs/
-.idea/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
 # Build results
+bin/
+obj/
 [Dd]ebug/
-[Dd]ebugPublic/
 [Rr]elease/
-[Rr]eleases/
 x64/
 x86/
-build/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
 bld/
 [Bb]in/
 [Oo]bj/
+[Ll]og/
 
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+# Visual Studio 2015/2017/2019/2022 cache/options directory
+.vs/
+# Visual Studio Code
+.vscode/
 
-# NuGet Packages
-*.nupkg
-**/packages/*
-!**/packages/build/
+# Visual Studio Copilot ve AI
+**/copilot-chat/
+**/.copilot/
+**/copilot-logs/
+.vs/copilot/
+.vscode/extensions/github.copilot*
 
-# Visual Studio cache files
-*.cache
-*.vsdx
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Web publish profiles
-**/PublishProfiles/
+# JetBrains Rider
+.idea/
+*.sln.iml
 
-# Node.js (eğer JavaScript kullanıyorsanız)
+# Rider Copilot ve AI dosyaları
+.idea/copilot/
+.idea/ai/
+.idea/chat/
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/caches/
+.idea/logs/
+.idea/sonarlint/
+
+# Web specific
 node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+appsettings.local.json
+appsettings.Development.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
 # Logs
-logs
+logs/
 *.log
-
-# Runtime data
-pids
-*.pid
-*.seed
 
 # Temporary files
 *.tmp
 *.temp
+~$*
 
-# IDE
-*~
-.vscode/
->>>>>>> 384edb859d336f92ade53880a893edb7945e39da
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/

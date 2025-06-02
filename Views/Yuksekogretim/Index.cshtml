@@ -199,7 +199,7 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
         chart.draw(data, options);
     }
 
-        function drawPieChart(dataArray) {
+    function drawPieChart(dataArray) {
         const counts = {};
         dataArray.forEach(u => {
             // Tür değerlerini standartlaştır
@@ -215,7 +215,7 @@ var yillar = new[] { "2023_2024", "2022_2023", "2021_2022", "2020_2021" };
             ...Object.entries(counts).map(([key, value]) => {
                 // Görüntüleme için düzgün formatlama
                 const displayName = key === "VAKIF MYO" ? "Vakıf MYO" :
-                                  key === "VAKIF" ? "Vakıf" : "Devlet";
+                    key === "VAKIF" ? "Vakıf" : "Devlet";
                 return [displayName, value];
             })
         ];
