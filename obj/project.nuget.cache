@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "2hq6oiFtSsM=",
   "success": true,
   "projectFilePath": "/Users/eyupgurer/Downloads/Web_Statistics-main/YokIstatistikWeb.csproj",
-=======
-  "dgSpecHash": "tTA1vcfBm1w=",
-  "success": true,
-  "projectFilePath": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj",
->>>>>>> d09774e8a90b8b9dfd126aabdc4800c8a981b457
   "expectedPackageFiles": [
     "/Users/eyupgurer/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/Users/eyupgurer/.nuget/packages/microsoft.extensions.logging.abstractions/2.0.0/microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
