@@ -76,6 +76,7 @@ C:/Users/Numan/Desktop/yökdenemesite/YokIstatistikWeb/bin/Debug/net8.0/Newtonso
 /Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/obj/Debug/net8.0/YokIstatistikWeb.pdb
 /Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/obj/Debug/net8.0/YokIstatistikWeb.genruntimeconfig.cache
 /Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/obj/Debug/net8.0/ref/YokIstatistikWeb.dll
+<<<<<<< HEAD
 /Users/eyupgurer/Downloads/Web_Statistics-main/bin/Debug/net8.0/appsettings.Development.json
 /Users/eyupgurer/Downloads/Web_Statistics-main/bin/Debug/net8.0/appsettings.json
 /Users/eyupgurer/Downloads/Web_Statistics-main/bin/Debug/net8.0/YokIstatistikWeb.staticwebassets.runtime.json
@@ -116,3 +117,5 @@ C:/Users/Numan/Desktop/yökdenemesite/YokIstatistikWeb/bin/Debug/net8.0/Newtonso
 /Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/YokIstatistikWeb.genruntimeconfig.cache
 /Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/ref/YokIstatistikWeb.dll
 /Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/YokIstatistikWeb.sourcelink.json
+=======
+>>>>>>> d09774e8a90b8b9dfd126aabdc4800c8a981b457

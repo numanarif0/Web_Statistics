@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/Users/eyupgurer/Downloads/Web_Statistics-main/YokIstatistikWeb.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "/Users/eyupgurer/Downloads/Web_Statistics-main/YokIstatistikWeb.csproj",
         "packagesPath": "/Users/eyupgurer/.nuget/packages/",
         "outputPath": "/Users/eyupgurer/Downloads/Web_Statistics-main/obj/",
+=======
+    "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj": {}
+  },
+  "projects": {
+    "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj",
+        "projectName": "YokIstatistikWeb",
+        "projectPath": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/YokIstatistikWeb.csproj",
+        "packagesPath": "/Users/eyupgurer/.nuget/packages/",
+        "outputPath": "/Users/eyupgurer/Desktop/WebStatistics/Web_Statistics/obj/",
+>>>>>>> d09774e8a90b8b9dfd126aabdc4800c8a981b457
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/eyupgurer/.nuget/NuGet/NuGet.Config"
