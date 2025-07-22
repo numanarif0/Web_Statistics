@@ -1,0 +1,106 @@
+﻿@model YokIstatistikWeb.Models.Universite
+
+<!-- Google Charts yükleyici -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<h2>@Model.universite</h2>
+<p><strong>Şehir:</strong> @Model.sehir</p>
+<p><strong>Tür:</strong> @Model.tur</p>
+
+<!-- Grafik alanları -->
+<div id="chart_div" style="width: 100%; height: 500px; margin-bottom: 40px;"></div>
+<div id="piechart_div" style="width: 100%; height: 400px; margin-bottom: 40px;"></div>
+
+<!-- Tablo alanı -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Birim Adı</th>
+            <th>Profesör</th>
+            <th>Doçent</th>
+            <th>Dr. Öğr. Üyesi</th>
+            <th>Öğretim Görevlisi</th>
+            <th>Araştırma Görevlisi</th>
+            <th>Toplam</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model.birimler)
+        {
+            <tr>
+                <td>@b.birim</td>
+                <td>@b.profesor_toplam</td>
+                <td>@b.docent_toplam</td>
+                <td>@b.doktor_ogretim_uyesi_toplam</td>
+                <td>@b.ogretim_gorevlisi_toplam</td>
+                <td>@b.arastirma_gorevlisi_toplam</td>
+                <td>@b.toplam_toplam</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="@Url.Action("Index")">← Geri Dön</a>
+
+@{
+    // Bar chart verisi (birim bazlı toplam sayılar)
+    var grafikData = System.Text.Json.JsonSerializer.Serialize(
+        new[] { new[] { "Birim", "Toplam" } }
+        .Concat(Model.birimler.Select(b => new object[]
+        {
+            b.birim,
+            b.toplam_toplam ?? 0
+        }))
+    );
+
+    // Pie chart verisi (toplam kadın/erkek oranı)
+    var toplamKadın = Model.birimler.Sum(b => b.toplam_kadin ?? 0);
+    var toplamErkek = Model.birimler.Sum(b => b.toplam_erkek ?? 0);
+
+    var pieChartData = System.Text.Json.JsonSerializer.Serialize(
+        new[] {
+            new[] { "Cinsiyet", "Kişi Sayısı" },
+            new object[] { "Kadın", toplamKadın },
+            new object[] { "Erkek", toplamErkek }
+        }
+    );
+}
+
+<script type="text/javascript">
+    google.charts.load('current', { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawBirimChart);
+    google.charts.setOnLoadCallback(drawPieChart);
+
+    function drawBirimChart() {
+        var data = google.visualization.arrayToDataTable(@Html.Raw(grafikData));
+
+        var options = {
+            title: 'Birimlere Göre Öğretim Elemanı Sayısı',
+            chartArea: { width: '60%' },
+            hAxis: {
+                title: 'Toplam Öğretim Elemanı',
+                minValue: 0
+            },
+            vAxis: {
+                title: 'Birim'
+            }
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+
+    function drawPieChart() {
+        var data = google.visualization.arrayToDataTable(@Html.Raw(pieChartData));
+
+        var options = {
+            title: 'Kadın/Erkek Öğretim Elemanı Dağılımı',
+            is3D: true,
+            pieSliceText: 'value',
+            legend: { position: 'right' }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+        chart.draw(data, options);
+    }
+</script>
