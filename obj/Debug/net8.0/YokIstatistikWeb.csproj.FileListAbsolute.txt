@@ -115,3 +115,4 @@ C:/Users/Numan/Desktop/yökdenemesite/YokIstatistikWeb/bin/Debug/net8.0/Newtonso
 /Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/YokIstatistikWeb.pdb
 /Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/YokIstatistikWeb.genruntimeconfig.cache
 /Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/ref/YokIstatistikWeb.dll
+/Users/eyupgurer/Downloads/Web_Statistics-main/obj/Debug/net8.0/YokIstatistikWeb.sourcelink.json
